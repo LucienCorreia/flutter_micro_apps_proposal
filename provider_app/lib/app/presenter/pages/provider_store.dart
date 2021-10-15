@@ -30,9 +30,4 @@ class ProviderStore extends ChangeNotifier implements Disposable {
       notifyListeners();
     }
   }
-
-  @override
-  void dispose() {
-    super.dispose();
-  }
 }
