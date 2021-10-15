@@ -11,6 +11,10 @@ class GithubUserRepository extends IGithubUserRepository {
 
   @override
   Future<List<GithubUserEntity>> getUsers() {
-    return _githubUserExternalDataSource.getUsers();
+    try {
+      return _githubUserExternalDataSource.getUsers();
+    } catch (e) {
+      rethrow;
+    }
   }
 }

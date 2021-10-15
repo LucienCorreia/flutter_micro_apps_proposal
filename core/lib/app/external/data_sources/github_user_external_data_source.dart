@@ -12,10 +12,14 @@ class GithubUserExternalDataSource implements IGithubUserExternalDataSource {
 
   @override
   Future<List<GithubUserEntity>> getUsers() async {
-    final response = await _http.get('https://api.github.com/users');
+    try {
+      final response = await _http.get('https://api.github.com/users');
 
-    return (response.data as Iterable)
-        .map((e) => GithubUserModel.fromJson(e))
-        .toList();
+      return (response.data as Iterable)
+          .map((e) => GithubUserModel.fromJson(e))
+          .toList();
+    } catch (e) {
+      rethrow;
+    }
   }
 }
