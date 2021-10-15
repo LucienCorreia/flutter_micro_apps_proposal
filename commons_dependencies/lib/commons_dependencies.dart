@@ -15,5 +15,7 @@ export 'package:get/get.dart'
         RouterOutlet,
         MultipartFile,
         CustomTransition;
-export 'package:mobx/mobx.dart' hide Interceptor, Interceptors;
+export 'package:mobx/mobx.dart' hide Interceptor, Interceptors, when;
+export 'package:mockito/mockito.dart';
+export 'package:mockito/annotations.dart';
 export 'package:provider/provider.dart' hide Dispose;
