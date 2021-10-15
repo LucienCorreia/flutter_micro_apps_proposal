@@ -21,7 +21,6 @@ class UsersBloc extends Bloc<UsersEvent, UsersState> {
 
       emit(UsersDoneState(users));
     } catch (e) {
-      print(e);
       emit(const UsersErrorState());
     }
   }
