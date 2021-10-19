@@ -1,6 +1,7 @@
 library commons_dependencies;
 
 export 'package:bloc/bloc.dart';
+export 'package:bloc_test/bloc_test.dart';
 export 'package:dio/dio.dart';
 export 'package:dio/native_imp.dart';
 export 'package:equatable/equatable.dart';

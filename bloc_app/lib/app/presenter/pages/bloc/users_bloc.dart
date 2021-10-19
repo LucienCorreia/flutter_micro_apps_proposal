@@ -7,10 +7,12 @@ import 'users_states.dart';
 class UsersBloc extends Bloc<UsersEvent, UsersState> {
   final GetGithubUsersUseCase _getGithubUsersUseCase;
 
-  UsersBloc({required GetGithubUsersUseCase getGithubUsersUseCase})
-      : _getGithubUsersUseCase = getGithubUsersUseCase,
+  UsersBloc({
+    required GetGithubUsersUseCase getGithubUsersUseCase,
+  })  : _getGithubUsersUseCase = getGithubUsersUseCase,
         super(const UsersLoadingState()) {
     on<GetUsersEvent>(_getUsers);
+    // on<SearchUsersEvent>();
   }
 
   Future<void> _getUsers(GetUsersEvent event, Emitter<UsersState> emit) async {
