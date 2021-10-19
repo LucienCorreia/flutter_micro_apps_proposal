@@ -114,16 +114,16 @@ packages:
     source: hosted
     version: "1.15.0"
   commons:
-    dependency: "direct main"
+    dependency: transitive
     description:
-      path: "../commons"
+      path: "../../commons"
       relative: true
     source: path
     version: "0.0.1"
   commons_dependencies:
     dependency: "direct main"
     description:
-      path: "../commons_dependencies"
+      path: "../../commons_dependencies"
       relative: true
     source: path
     version: "0.0.1"
@@ -137,7 +137,7 @@ packages:
   core:
     dependency: "direct main"
     description:
-      path: "../core"
+      path: "../../core"
       relative: true
     source: path
     version: "0.0.1"
@@ -155,6 +155,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.0.1"
+  cupertino_icons:
+    dependency: "direct main"
+    description:
+      name: cupertino_icons
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.3"
   dart_style:
     dependency: transitive
     description:
@@ -215,7 +222,7 @@ packages:
       name: flutter_bloc
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "7.3.0"
+    version: "7.3.1"
   flutter_lints:
     dependency: "direct dev"
     description:
@@ -236,7 +243,7 @@ packages:
       name: flutter_modular
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "4.1.1"
+    version: "4.1.2"
   flutter_modular_annotations:
     dependency: transitive
     description:
@@ -340,6 +347,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.5"
+  mobx_app:
+    dependency: "direct main"
+    description:
+      path: ".."
+      relative: true
+    source: path
+    version: "0.0.1"
   mockito:
     dependency: transitive
     description:
@@ -537,7 +551,7 @@ packages:
   test_tools:
     dependency: "direct main"
     description:
-      path: "../test_tools"
+      path: "../../test_tools"
       relative: true
     source: path
     version: "0.0.1"

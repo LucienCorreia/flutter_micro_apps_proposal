@@ -184,7 +184,7 @@ packages:
     source: hosted
     version: "1.2.0"
   faker:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: faker
       url: "https://pub.dartlang.org"
@@ -215,7 +215,7 @@ packages:
       name: flutter_bloc
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "7.3.0"
+    version: "7.3.1"
   flutter_lints:
     dependency: "direct dev"
     description:
@@ -236,7 +236,7 @@ packages:
       name: flutter_modular
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "4.1.1"
+    version: "4.1.2"
   flutter_modular_annotations:
     dependency: transitive
     description:
@@ -534,13 +534,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.4.0"
-  test_tools:
-    dependency: "direct main"
-    description:
-      path: "../test_tools"
-      relative: true
-    source: path
-    version: "0.0.1"
   triple:
     dependency: transitive
     description:

@@ -1,4 +1,4 @@
-name: mobx_app
+name: test_tools
 description: A new Flutter package project.
 version: 0.0.1
 homepage: none
@@ -16,10 +16,9 @@ dependencies:
     path: ../commons
   commons_dependencies:
     path: ../commons_dependencies
+  faker: ^2.0.0
   flutter:
     sdk: flutter
-  test_tools:
-    path: ../test_tools
 
 dev_dependencies:
   flutter_test:
