@@ -1,4 +1,4 @@
-import 'package:commons/app/widgets/user_widget.dart';
+import 'package:commons/commons.dart';
 import 'package:commons_dependencies/commons_dependencies.dart';
 import 'package:flutter/material.dart';
 
@@ -21,6 +21,9 @@ class _ProviderPageState extends ModularState<ProviderPage, ProviderStore> {
       child: Scaffold(
         appBar: AppBar(
           title: const Text('Provider Page'),
+          actions: const [
+            SelectModuleWidget(),
+          ],
         ),
         body: Consumer<ProviderStore>(
           builder: (_, state, __) {

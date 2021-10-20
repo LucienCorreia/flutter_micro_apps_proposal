@@ -1,4 +1,5 @@
 import 'package:commons/app/widgets/user_widget.dart';
+import 'package:commons/app/widgets/widgets.dart';
 import 'package:commons_dependencies/commons_dependencies.dart';
 import 'package:flutter/material.dart';
 
@@ -19,6 +20,9 @@ class _MobxPageState extends ModularState<MobxPage, MobxStore> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('MobX Page'),
+        actions: const [
+          SelectModuleWidget(),
+        ],
       ),
       body: Observer(
         builder: (_) {

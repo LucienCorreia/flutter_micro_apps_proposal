@@ -39,12 +39,6 @@ class _HomePageState extends ModularState<HomePage, HomeStore> {
           )
         ],
       ),
-      floatingActionButton: FloatingActionButton(
-        child: const Icon(
-          Icons.person,
-        ),
-        onPressed: () => Modular.to.pushNamed('/profile'),
-      ),
     );
   }
 }

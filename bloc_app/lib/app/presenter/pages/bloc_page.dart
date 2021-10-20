@@ -1,4 +1,4 @@
-import 'package:commons/app/widgets/user_widget.dart';
+import 'package:commons/commons.dart';
 import 'package:commons_dependencies/commons_dependencies.dart';
 import 'package:flutter/material.dart';
 
@@ -21,6 +21,9 @@ class _BlocPageState extends ModularState<BlocPage, BlocStore> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('BLoC Page'),
+        actions: const [
+          SelectModuleWidget(),
+        ],
       ),
       body: BlocBuilder<UsersBloc, UsersState>(
         bloc: controller.bloc,

@@ -6,7 +6,6 @@ import 'package:core/core.dart';
 import 'package:getx_app/getx_app.dart';
 import 'package:home_app/home_app.dart';
 import 'package:mobx_app/mobx_app.dart';
-import 'package:profile_app/profile_app.dart';
 import 'package:provider_app/provider_app.dart';
 
 class AppModule extends Module {
@@ -51,10 +50,6 @@ class AppModule extends Module {
         ModuleRoute(
           '/provider',
           module: ProviderAppModule(),
-        ),
-        ModuleRoute(
-          '/profile',
-          module: ProfileAppModule(),
         ),
       ];
 }

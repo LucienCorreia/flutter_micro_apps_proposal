@@ -45,8 +45,6 @@ dependencies:
     path: ../mobx_app
   provider_app:
     path: ../provider_app
-  profile_app:
-    path: ../profile_app
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
