@@ -7,12 +7,12 @@ import 'presenter/pages/bloc_store.dart';
 class BlocAppModule extends Module {
   @override
   List<Bind> get binds => [
-        Bind.factory(
+        Bind.factory<UsersBloc>(
           (i) => UsersBloc(
             getGithubUsersUseCase: i.get(),
           ),
         ),
-        Bind.factory(
+        Bind.factory<BlocStore>(
           (i) => BlocStore(
             bloc: i.get(),
           ),

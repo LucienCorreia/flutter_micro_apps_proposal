@@ -12,7 +12,6 @@ class UsersBloc extends Bloc<UsersEvent, UsersState> {
   })  : _getGithubUsersUseCase = getGithubUsersUseCase,
         super(const UsersLoadingState()) {
     on<GetUsersEvent>(_getUsers);
-    // on<SearchUsersEvent>();
   }
 
   Future<void> _getUsers(GetUsersEvent event, Emitter<UsersState> emit) async {
